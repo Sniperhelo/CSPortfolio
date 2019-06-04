@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <form>
+    <label for="pswd">Enter Password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "andrew";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Howto.html";
+             if (password == confirmPassword) {
+                 alert("Password Accepted, Welcome User")
+             }
+        }
+        else{
+            alert("Password does not match, please try again.");
+        }
+    }
+</script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

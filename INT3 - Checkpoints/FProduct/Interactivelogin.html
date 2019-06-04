@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body style="background-color:powderblue">
+    <h1 align="center"> Welcome to my Interactive! </h1>
+    <h4 align="center"> Put True or False </h4>
+
+    <h5 align="center">People are dumb</h5>
+    <div align="center">
+        <input type="text" id="test">
+        <input type="button" value="Check" id="checkbutton">
+        <p id="err"></p>
+
+        <script>
+            var checkbox = document.getElementById("test");
+            var checkbutton = document.getElementById("checkbutton")
+
+            checkbutton.addEventListener("click", createresult);
+
+            function createresult() {
+                alert();
+                if ((checkbox.value == "true") || (checkbox.value == "true")) {
+                    document.getElementById('err').innerHTML = 'Correct';
+                }
+                else {
+                    document.getElementById('err').innerHTML = 'Incorrect';
+                }
+            }
+        </script>
+    </div>
+<form>
+    <label for="pswd">Enter Password To Return/Go To The How To Page: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is coolkids-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "coolkids";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Howto.html";
+             if (password == confirmPassword) {
+                 alert("Password Accepted, Welcome User")
+             }
+        }
+        else{
+            alert("Password does not match, please try again.");
+        }
+    }
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="Interactive.js"></script>
+</body>
+
+</html>

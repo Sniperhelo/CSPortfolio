@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="an apple")||(a.value=="apple"))
+{
+document.getElementById('err').innerHTML= 'correct';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong';
+
+}
+
+}
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="testing.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter Password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is kidd-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "kidd";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Interactivelogin.html";
+             if (password == confirmPassword) {
+                 alert("Password Accepted, Welcome User")
+             }
+        }
+        else{
+            alert("Password does not match, please try again.");
+        }
+    }
+</script>
+</body>
+</html>
